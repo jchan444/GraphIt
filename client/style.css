@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu Light', 'Century Gothic', sans-serif;
+     margin: 0;
+    padding: 0;
+     color: #393939;
+     background: lightgrey;
+    text-align: center;
+}
+
+.container {
+width: 50%;
+height: 10em;
+text-align:center;
+margin: auto;
+padding: 10px;
+border: 3px solid black;
+font-family: 'Times New Roman', Times, serif;
+}
+
+
+button{
+    width: 100px;
+    text-align:center;
+}
+
+button:hover {
+    background: darkcyan;
+    cursor: pointer;
+} 
+
+

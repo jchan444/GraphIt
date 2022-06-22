@@ -1,1 +1,38 @@
+1. Establish webpack and dev enviroments - setting up concurrently to launch localhost8080 (front end) and localhost3000(backend)
 
+
+index.html > bundle > - index.js as entry >  app.js > components
+
+server > API > client
+
+2. Establish react elements onto the page in app.jsx - just get box to show
+    title, button to submit
+
+3. server - create post request - error handlers etc
+
+
+Front end- fields, submit functionality
+backend - api - get and post requests
+
+
+
+
+
+https://quickchart.io/chart?c=
+{
+    type:'bar',
+    data:
+        {
+            labels:['January','February', 'March','April', 'May'],
+            datasets:[
+                {
+                    label:'Dogs',
+                    data:[50,60,70,180,190]
+                },
+                {
+                    label:'Cats',
+                    data:[100,200,300,400,500]
+                }
+                    ]
+        }
+}
