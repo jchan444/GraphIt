@@ -4,6 +4,12 @@ const nodeEnv = process.env.NODE_ENV;
 
 module.exports = {
     entry: './client/index.js',
+    devServer: {
+        static: {
+            directory: path.resolve(__dirname,'build'),
+        }
+    },
+
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js',

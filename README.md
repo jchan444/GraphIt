@@ -14,25 +14,4 @@ server > API > client
 Front end- fields, submit functionality
 backend - api - get and post requests
 
-
-
-
-
-https://quickchart.io/chart?c=
-{
-    type:'bar',
-    data:
-        {
-            labels:['January','February', 'March','April', 'May'],
-            datasets:[
-                {
-                    label:'Dogs',
-                    data:[50,60,70,180,190]
-                },
-                {
-                    label:'Cats',
-                    data:[100,200,300,400,500]
-                }
-                    ]
-        }
-}
+importaudio

@@ -1,52 +1,40 @@
 const fs = require('fs/promises');
 const path = require('path');
+const QuickChart = require('quickchart-js');
 
-const graph = {
-    type:'bar',
-    data:
-        {
-            labels:['January','February', 'March','April', 'May'],
-            datasets:[
-                {
-                    label:'Dogs',
-                    data:[50,60,70,180,190]
-                },
-                {
-                    label:'Cats',
-                    data:[100,200,300,400,500]
-                }
-                    ]
-        }
-}
 
 const graphController = {};
 
 graphController.getBarGraph = (req, res, next) => {
-    console.log('hi')
-    fetch('https://quickchart.io/chart', 
-    {
-    method: 'GET',
-    headers: {
-        'Content-Type': 'application/json',
-     },
-    body: JSON.stringify(graph)
-    })
 
-    .then (response => {
-        console.log('hi2')
-        response.json()
+console.log("reached Graphcontroller")    
+    const graph = new QuickChart();
+
+graph
+    .setConfig({
+        type: 'bar',
+        data: {labels: ['Teresa', 'Johnny'], 
+               datasets: 
+                    [{label: 'how much they love each other',
+                    data: [1, 2] },
+                    {label: 'How much they hate each other',
+                    data: [3, 4] }
+                ]},
     })
-    .then(response => {
-        res.locals.graph = response;
-        return next();
-    })
-    .catch(err => {
-        console.log('hi3')
+    .setWidth(800)
+    .setHeight(400)
+    .setBackgroundColor('white');
+
+
+    res.locals.url = graph.getUrl();
+
+    if(!res.locals.graph) {
         next({
             log: `Error in graphController.getBarGraph - ERROR: ${err}`,
             message: {err: 'Error occurred in graphController.getBarGraph'}
         });
-    });
+    }
+    return next();
 }
 
 module.exports = graphController;

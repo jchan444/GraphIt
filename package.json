@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server/server.js --mode production",
+    "start": "nodemon server/server.js --mode production",
     "build": "webpack --mode production",
-    "dev": "concurrently \"webpack-dev-server --mode development --open --hot\" \"node server/server.js --mode production\" "
+    "dev": "concurrently \"webpack-dev-server --mode development --open --hot\" \"nodemon server/server.js --mode development\" "
   },
   "keywords": [],
   "author": "Johnny Chan",
@@ -19,6 +19,7 @@
     "fs": "^0.0.1-security",
     "nedb-core": "^3.0.6",
     "path": "^0.12.7",
+    "quickchart-js": "^3.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

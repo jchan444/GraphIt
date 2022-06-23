@@ -10,7 +10,7 @@
 
 .container {
 width: 50%;
-height: 10em;
+height: 50em;
 text-align:center;
 margin: auto;
 padding: 10px;
@@ -21,7 +21,11 @@ font-family: 'Times New Roman', Times, serif;
 
 button{
     width: 100px;
+    height: 30px;
     text-align:center;
+    margin: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 button:hover {
@@ -29,4 +33,21 @@ button:hover {
     cursor: pointer;
 } 
 
+.option{
+    margin: 10px;
+}
+
+.dataField {
+    width: 200px;
+    height: 25px;
+    margin:5px;
+}
+
+
+
+
+
+#menuType {
+font-size: 1.2em;
+}
 

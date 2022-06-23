@@ -8,10 +8,10 @@ const PORT = 3000;
 //loads files that are in public directory
 app.use('/', express.static('public'))
 
-app.get('/bar', graphController.getBarGraph, (req, res) => {
-    return res.status(200).json('success');
+app.post('/bar', graphController.getBarGraph, (req, res) => {
+    res.status(200).json(res.locals.url)
 });
-
+// return res.status(200).json(res.locals.graph);
 
 //catch-all route handler
 app.use((req, res) => res.status(404).send('Cannot find page!'));
