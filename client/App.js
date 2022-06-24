@@ -14,15 +14,4 @@ class App extends Component {
 
 }
 
-
-
-
-// const App = () => (
-//     <div id="app">
-//     <Container/>
-//   </div>
-// )
-
-
-
 export default App;

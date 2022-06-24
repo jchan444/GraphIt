@@ -14,4 +14,14 @@ server > API > client
 Front end- fields, submit functionality
 backend - api - get and post requests
 
-importaudio
+
+
+Future Features:
+
+import audio
+make database to save previous images
+
+add onto screen instead of redirect to api
+
+REACT HOOKS
+REACT ROUTER

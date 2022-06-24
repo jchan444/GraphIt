@@ -1,11 +1,18 @@
 * {
     box-sizing: border-box;
     font-family: 'Ubuntu Light', 'Century Gothic', sans-serif;
-     margin: 0;
+     margin: 5;
     padding: 0;
-     color: #393939;
-     background: lightgrey;
+     color: rgba(255, 255, 255, 0.74);
+     /* background: lightgrey; */
     text-align: center;
+    font-weight: bold;
+}
+
+body {
+    background-image: url("images/Background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
@@ -14,8 +21,8 @@ height: 50em;
 text-align:center;
 margin: auto;
 padding: 10px;
-border: 3px solid black;
 font-family: 'Times New Roman', Times, serif;
+
 }
 
 
@@ -40,12 +47,36 @@ button:hover {
 .dataField {
     width: 200px;
     height: 25px;
-    margin:5px;
+    margin:10px;
 }
 
+.textbox {
+    color:black
+}
 
+.textbox:focus, input:focus {
+    color: black;
+}
 
+input {
+    color:black;
+}
 
+#White {
+    background: white
+}
+
+#DarkSeaGreen {
+    background: darkseagreen
+}
+
+#DarkCyan {
+    background: DarkCyan
+}
+
+#LightPink {
+    background: lightpink
+}
 
 #menuType {
 font-size: 1.2em;
